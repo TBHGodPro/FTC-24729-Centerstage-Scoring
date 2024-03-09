@@ -1,7 +1,7 @@
-import { Alert, Button, Image, Pressable, Text, View } from 'react-native';
-import Styles from './Styles';
+import { Image, Pressable, Text, View } from 'react-native';
 import SpecialStyles from './SpecialStyles';
 import State from './State';
+import Styles from './Styles';
 
 export default function Auton() {
   State.initAuton();
@@ -9,9 +9,7 @@ export default function Auton() {
   return (
     <View>
       {/* Title */}
-      <Text style={Styles.Header}>AUTON    {State.getAutonTerm()}</Text>
-      {/* Separator */}
-        <View style={Styles.SeparatorHorizontal}></View>
+      <Text style={Styles.Header}>AUTON {State.getAutonTerm()}</Text>
       {/* Bot 1 */}
       <View style={Styles.HorizontalContainer}>
         <View style={Styles.HalfWidthItem}>
@@ -103,8 +101,8 @@ export default function Auton() {
         </View>
       </View>
       {/* Backdrop */}
-      <Text style={SpecialStyles.Counter.Title}>BACKDROP</Text>
       <View style={SpecialStyles.Counter.Container}>
+        <Text style={SpecialStyles.Counter.Title}>BACKDROP</Text>
         <Pressable
           onPress={() => (State.auton.backdrop > 0 ? State.setAuton('both', 'backdrop', -1) : null)}
           style={SpecialStyles.Counter.Button}
@@ -120,8 +118,8 @@ export default function Auton() {
         </Pressable>
       </View>
       {/* Backstage */}
-      <Text style={SpecialStyles.Counter.Title}>BACKSTAGE</Text>
       <View style={SpecialStyles.Counter.Container}>
+        <Text style={SpecialStyles.Counter.Title}>BACKSTAGE</Text>
         <Pressable
           onPress={() => (State.auton.backstage > 0 ? State.setAuton('both', 'backstage', -1) : null)}
           style={SpecialStyles.Counter.Button}

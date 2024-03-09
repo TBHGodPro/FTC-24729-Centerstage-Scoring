@@ -10,12 +10,12 @@ export default {
       borderRadius: 15,
       flex: 1,
       alignItems: 'center',
-      justifyContent: 'center'
+      justifyContent: 'center',
     }),
     Icon: (width: number, height: number, left: number, top: number) => ({
       width,
       height,
-      position: "absolute",
+      position: 'absolute',
       left,
       top,
     }),
@@ -25,19 +25,20 @@ export default {
     Container: {
       alignItems: 'center',
       justifyContent: 'center',
-      width: "100%",
+      width: '100%',
       height: 50,
       flexDirection: 'row',
       columnGap: 8,
-      marginTop: 4
+      marginTop: 8,
+      paddingLeft: 10.8,
     },
     Title: {
-        width: "100%",
-        textAlign: 'center',
-        color: 'white',
-        fontSize: 15,
-        letterSpacing: 0,
-        marginTop: 10
+      textAlign: 'left',
+      left: 6.5,
+      color: 'white',
+      fontSize: 15,
+      letterSpacing: 0,
+      position: 'absolute',
     },
     Text: {
       width: 50,

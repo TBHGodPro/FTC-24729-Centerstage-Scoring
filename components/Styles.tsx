@@ -20,8 +20,14 @@ export default StyleSheet.create({
     textAlign: 'center',
     fontSize: 35,
     fontWeight: '600',
-    marginBottom: 20,
-    letterSpacing: 1.5
+    marginBottom: 15,
+    letterSpacing: 1.5,
+    padding: 5,
+    width: "90%",
+    alignSelf: "center",
+    backgroundColor: "#202030",
+    borderRadius: 15,
+    overflow: "hidden"
   },
 
   SeparatorVertical: {
@@ -44,6 +50,7 @@ export default StyleSheet.create({
 
   HorizontalContainer: {
     flexDirection: 'row',
+    marginBottom: 3
   },
   HalfWidthItem: {
     flex: 1,
