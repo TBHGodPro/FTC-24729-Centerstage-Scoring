@@ -26,23 +26,12 @@ class State {
       });
   }
 
+  public resetAuton() {
+    this._auton[1](defaultValues.auton);
+  }
+
   public initAuton() {
-    this._auton = useState<AutonState>({
-      one: {
-        prop: true,
-        purple: false,
-        yellow: false,
-        park: false,
-      },
-      two: {
-        prop: true,
-        purple: false,
-        yellow: false,
-        park: false,
-      },
-      backdrop: 0,
-      backstage: 0,
-    });
+    this._auton = useState<AutonState>(defaultValues.auton);
   }
 
   public getAutonTerm(): string {
@@ -58,3 +47,24 @@ class State {
 }
 
 export default new State();
+
+const defaultValues: {
+  auton: AutonState;
+} = {
+  auton: {
+    one: {
+      prop: true,
+      purple: false,
+      yellow: false,
+      park: false,
+    },
+    two: {
+      prop: true,
+      purple: false,
+      yellow: false,
+      park: false,
+    },
+    backdrop: 0,
+    backstage: 0,
+  },
+};

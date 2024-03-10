@@ -2,6 +2,7 @@ import { Image, Pressable, Text, View } from 'react-native';
 import SpecialStyles from './SpecialStyles';
 import State from './State';
 import Styles from './Styles';
+import Ionicons from '@expo/vector-icons/Ionicons';
 
 export default function Auton() {
   State.initAuton();
@@ -10,6 +11,16 @@ export default function Auton() {
     <View>
       {/* Title */}
       <Text style={Styles.Header}>AUTON {State.getAutonTerm()}</Text>
+      {/* Reset Button */}
+      <Pressable
+        style={Styles.ResetButton}
+        onPress={() => State.resetAuton()}
+      >
+        <Ionicons
+          style={Styles.ResetButtonIcon}
+          name='reload'
+        />
+      </Pressable>
       {/* Bot 1 */}
       <View style={Styles.HorizontalContainer}>
         <View style={Styles.HalfWidthItem}>
@@ -26,7 +37,7 @@ export default function Auton() {
           {/* Park */}
           <Pressable
             onPress={() => State.setAuton('one', 'park', 'invert')}
-            style={SpecialStyles.ToggleButton.Button(State.auton.one.park, '#aaa')}
+            style={SpecialStyles.ToggleButton.Button(State.auton.one.park, '#5d5')}
           >
             <Image
               style={SpecialStyles.ToggleButton.Icon(90, 80, -4, 7)}

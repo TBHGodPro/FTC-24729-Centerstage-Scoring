@@ -17,17 +17,35 @@ export default StyleSheet.create({
 
   Header: {
     color: '#fff',
-    textAlign: 'center',
+    textAlign: 'left',
     fontSize: 35,
     fontWeight: '600',
     marginBottom: 15,
     letterSpacing: 1.5,
     padding: 5,
-    width: "90%",
-    alignSelf: "center",
-    backgroundColor: "#202030",
+    paddingLeft: 20,
+    width: '90%',
+    alignSelf: 'center',
+    backgroundColor: '#202030',
     borderRadius: 15,
-    overflow: "hidden"
+    overflow: 'hidden',
+  },
+
+  ResetButton: {
+    width: 40,
+    height: 40,
+    backgroundColor: '#303040',
+    borderRadius: 100,
+    position: 'absolute',
+    top: 6.5,
+    right: 25,
+  },
+  ResetButtonIcon: {
+    color: 'white',
+    fontSize: 24,
+    position: 'absolute',
+    left: 8,
+    top: 8,
   },
 
   SeparatorVertical: {
@@ -40,8 +58,8 @@ export default StyleSheet.create({
   },
   SeparatorHorizontal: {
     height: 5,
-    width: "90%",
-    alignSelf: "center",
+    width: '90%',
+    alignSelf: 'center',
     backgroundColor: 'white',
     borderRadius: 100,
     marginBottom: 15,
@@ -50,7 +68,7 @@ export default StyleSheet.create({
 
   HorizontalContainer: {
     flexDirection: 'row',
-    marginBottom: 3
+    marginBottom: 3,
   },
   HalfWidthItem: {
     flex: 1,
