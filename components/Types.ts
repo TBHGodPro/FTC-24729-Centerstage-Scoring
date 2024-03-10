@@ -1,16 +1,23 @@
-export interface AutonState {
+export interface EndgameState {
   one: {
-    prop: boolean,
-    purple: boolean;
-    yellow: boolean;
-    park: boolean;
+    park: EndgameParkState;
+    // 0 - 3
+    drone: number;
   };
   two: {
-    prop: boolean,
-    purple: boolean;
-    yellow: boolean;
-    park: boolean;
+    park: EndgameParkState;
+    // 0 - 3
+    drone: number;
   };
-  backdrop: number;
-  backstage: number;
+}
+
+export interface PenaltiesState {
+  major: number;
+  minor: number;
+}
+
+export enum EndgameParkState {
+  NONE,
+  PARK,
+  HANG,
 }

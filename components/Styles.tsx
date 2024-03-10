@@ -10,14 +10,18 @@ export default StyleSheet.create({
   },
 
   Scroll: {
-    marginTop: 50,
+    marginTop: 30,
     width: '97%',
     height: '100%',
   },
 
+  Item: {
+    marginTop: 20,
+  },
+
   Header: {
     color: '#fff',
-    textAlign: 'left',
+    textAlign: 'center',
     fontSize: 35,
     fontWeight: '600',
     marginBottom: 15,

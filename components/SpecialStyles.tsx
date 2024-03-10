@@ -36,7 +36,7 @@ export default {
       textAlign: 'left',
       left: 6.5,
       color: 'white',
-      fontSize: 15,
+      fontSize: 16,
       letterSpacing: 0,
       position: 'absolute',
     },
