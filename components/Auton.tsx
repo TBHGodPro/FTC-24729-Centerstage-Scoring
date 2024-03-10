@@ -82,7 +82,7 @@ export default function Auton() {
           {/* Park */}
           <Pressable
             onPress={() => State.setAuton('two', 'park', 'invert')}
-            style={SpecialStyles.ToggleButton.Button(State.auton.two.park, '#aaa')}
+            style={SpecialStyles.ToggleButton.Button(State.auton.two.park, '#5d5')}
           >
             <Image
               style={SpecialStyles.ToggleButton.Icon(90, 80, -4, 7)}
