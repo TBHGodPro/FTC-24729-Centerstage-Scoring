@@ -1,4 +1,4 @@
-import Ionicons from '@expo/vector-icons/Ionicons';
+import { Ionicons, MaterialIcons } from '@expo/vector-icons';
 import { Pressable, View } from 'react-native';
 import SpecialStyles from '../assets/styles/SpecialStyles';
 import State from '../state/State';
@@ -12,9 +12,9 @@ export default function TabSwitcher() {
         style={SpecialStyles.TabSwitcher.Button(Tab.SCORING)}
         onPress={() => State.tabs.set(Tab.SCORING)}
       >
-        <Ionicons
+        <MaterialIcons
           style={SpecialStyles.TabSwitcher.ButtonIcon(Tab.SCORING)}
-          name='list'
+          name='scoreboard'
         />
       </Pressable>
       {/* Practice */}
@@ -27,14 +27,14 @@ export default function TabSwitcher() {
           name='play'
         />
       </Pressable>
-      {/* Info */}
+      {/* Records */}
       <Pressable
-        style={SpecialStyles.TabSwitcher.Button(Tab.INFO)}
-        onPress={() => State.tabs.set(Tab.INFO)}
+        style={SpecialStyles.TabSwitcher.Button(Tab.RECORDS)}
+        onPress={() => State.tabs.set(Tab.RECORDS)}
       >
         <Ionicons
-          style={SpecialStyles.TabSwitcher.ButtonIcon(Tab.INFO)}
-          name='information'
+          style={SpecialStyles.TabSwitcher.ButtonIcon(Tab.RECORDS)}
+          name='trophy'
         />
       </Pressable>
     </View>

@@ -23,7 +23,7 @@ export default class TabsState {
 export enum Tab {
   SCORING,
   PRACTICE,
-  INFO,
+  RECORDS,
 }
 
 export const defaultValue: Tab = Tab.SCORING;
