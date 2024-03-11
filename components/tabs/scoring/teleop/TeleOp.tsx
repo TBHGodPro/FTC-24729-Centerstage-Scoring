@@ -1,8 +1,8 @@
-import { Image, Pressable, Text, View } from 'react-native';
-import SpecialStyles from '../SpecialStyles';
-import State from '../State';
-import Styles from '../Styles';
 import Ionicons from '@expo/vector-icons/Ionicons';
+import { Pressable, Text, View } from 'react-native';
+import Styles from '../../../assets/styles/MainStyles';
+import SpecialStyles from '../../../assets/styles/SpecialStyles';
+import State from '../../../state/State';
 
 export default function TeleOp() {
   State.teleop.init();

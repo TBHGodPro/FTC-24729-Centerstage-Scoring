@@ -1,13 +1,22 @@
-import { StyleSheet } from 'react-native';
+import { screenSize } from '../../Constants';
+import { s } from './CustomStylesType';
 
-export default StyleSheet.create({
-  container: {
+export default s({
+  Container: {
     flex: 1,
     backgroundColor: '#10101a',
     alignItems: 'center',
     justifyContent: 'center',
     fontFamily: '',
+    width: '100%',
+    height: '100%',
   },
+
+  FullBox: (left: number) => ({
+    width: '100%',
+    height: '100%',
+    left: left + screenSize.width * 0.015,
+  }),
 
   Scroll: {
     marginTop: 30,

@@ -1,7 +1,10 @@
 import { ColorValue } from 'react-native';
+import State from '../../state/State';
+import { Tab } from '../../state/TabsState';
+import { s } from './CustomStylesType';
 
 export default {
-  ToggleButton: {
+  ToggleButton: s({
     Button: (active: boolean, activeColor: ColorValue) => ({
       backgroundColor: active ? activeColor : '#1b1b2b',
       minWidth: 85,
@@ -19,9 +22,9 @@ export default {
       left,
       top,
     }),
-  },
+  }),
 
-  Counter: {
+  Counter: s({
     Container: {
       alignItems: 'center',
       justifyContent: 'center',
@@ -63,5 +66,35 @@ export default {
       fontSize: 20,
       paddingTop: 6.5,
     },
-  },
+  }),
+
+  TabSwitcher: s({
+    Container: {
+      position: 'absolute',
+      bottom: 30,
+      alignSelf: 'center',
+      width: 175,
+      height: 50,
+      backgroundColor: '#202030',
+      borderRadius: 1000,
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'center',
+      columnGap: 12,
+    },
+    Button: (tab: Tab) => ({
+      height: 40,
+      width: 45,
+      borderRadius: 100,
+      backgroundColor: State.tabs.value === tab ? '#303048' : '#202030',
+      alignItems: 'center',
+      justifyContent: 'center',
+    }),
+    ButtonIcon: (tab: Tab) => ({
+      color: State.tabs.value === tab ? '#ffffff' : '#a0a0a0',
+      textAlign: 'center',
+      marginLeft: 2,
+      fontSize: 25,
+    }),
+  }),
 };

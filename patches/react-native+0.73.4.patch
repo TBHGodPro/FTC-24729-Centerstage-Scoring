@@ -1,0 +1,17 @@
+diff --git a/node_modules/react-native/.DS_Store b/node_modules/react-native/.DS_Store
+new file mode 100644
+index 0000000..a1eb16f
+Binary files /dev/null and b/node_modules/react-native/.DS_Store differ
+diff --git a/node_modules/react-native/Libraries/StyleSheet/StyleSheet.d.ts b/node_modules/react-native/Libraries/StyleSheet/StyleSheet.d.ts
+index 914791c..b392666 100644
+--- a/node_modules/react-native/Libraries/StyleSheet/StyleSheet.d.ts
++++ b/node_modules/react-native/Libraries/StyleSheet/StyleSheet.d.ts
+@@ -29,7 +29,7 @@ type OpaqueColorValue = symbol & {__TYPE__: 'Color'};
+ export type ColorValue = string | OpaqueColorValue;
+ 
+ export namespace StyleSheet {
+-  type NamedStyles<T> = {[P in keyof T]: ViewStyle | TextStyle | ImageStyle};
++  type NamedStyles<T> = {[P in keyof T]: ViewStyle | TextStyle | ImageStyle | ((...args: any[]) => ViewStyle | TextStyle | ImageStyle)};
+ 
+   /**
+    * Creates a StyleSheet style reference from the given object.

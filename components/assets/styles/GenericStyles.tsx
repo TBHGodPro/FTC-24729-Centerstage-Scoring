@@ -1,5 +1,7 @@
+import { s } from './CustomStylesType';
+
 export default {
-  textAlign: {
+  textAlign: s({
     left: {
       textAlign: 'left',
     },
@@ -9,5 +11,5 @@ export default {
     right: {
       textAlign: 'right',
     },
-  },
+  }),
 };

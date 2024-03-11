@@ -1,9 +1,9 @@
-import { Image, Pressable, Text, View } from 'react-native';
-import SpecialStyles from '../SpecialStyles';
-import State from '../State';
-import Styles from '../Styles';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import GenericStyles from '../GenericStyles';
+import { Image, Pressable, Text, View } from 'react-native';
+import GenericStyles from '../../../assets/styles/GenericStyles';
+import Styles from '../../../assets/styles/MainStyles';
+import SpecialStyles from '../../../assets/styles/SpecialStyles';
+import State from '../../../state/State';
 
 export default function Auton() {
   State.auton.init();
@@ -38,7 +38,7 @@ export default function Auton() {
           >
             <Image
               style={SpecialStyles.ToggleButton.Icon(80, 80, 7, 4)}
-              source={require('../../assets/icons/Prop.png')}
+              source={require('../../../assets/icons/Prop.png')}
             ></Image>
           </Pressable>
           {/* Park */}
@@ -48,7 +48,7 @@ export default function Auton() {
           >
             <Image
               style={SpecialStyles.ToggleButton.Icon(90, 80, -4, 7)}
-              source={require('../../assets/icons/Park.png')}
+              source={require('../../../assets/icons/Park.png')}
             ></Image>
           </Pressable>
           {/* Purple */}
@@ -58,7 +58,7 @@ export default function Auton() {
           >
             <Image
               style={SpecialStyles.ToggleButton.Icon(80, 70, 0, 11.5)}
-              source={require('../../assets/icons/PurplePixel.png')}
+              source={require('../../../assets/icons/PurplePixel.png')}
             ></Image>
           </Pressable>
           {/* Yellow */}
@@ -68,7 +68,7 @@ export default function Auton() {
           >
             <Image
               style={SpecialStyles.ToggleButton.Icon(80, 70, 4, 10)}
-              source={require('../../assets/icons/YellowPixel.png')}
+              source={require('../../../assets/icons/YellowPixel.png')}
             ></Image>
           </Pressable>
         </View>
@@ -85,7 +85,7 @@ export default function Auton() {
           >
             <Image
               style={SpecialStyles.ToggleButton.Icon(80, 80, 7, 4)}
-              source={require('../../assets/icons/Prop.png')}
+              source={require('../../../assets/icons/Prop.png')}
             ></Image>
           </Pressable>
           {/* Park */}
@@ -95,7 +95,7 @@ export default function Auton() {
           >
             <Image
               style={SpecialStyles.ToggleButton.Icon(90, 80, -4, 7)}
-              source={require('../../assets/icons/Park.png')}
+              source={require('../../../assets/icons/Park.png')}
             ></Image>
           </Pressable>
           {/* Purple */}
@@ -105,7 +105,7 @@ export default function Auton() {
           >
             <Image
               style={SpecialStyles.ToggleButton.Icon(80, 70, 0, 11.5)}
-              source={require('../../assets/icons/PurplePixel.png')}
+              source={require('../../../assets/icons/PurplePixel.png')}
             ></Image>
           </Pressable>
           {/* Yellow */}
@@ -115,7 +115,7 @@ export default function Auton() {
           >
             <Image
               style={SpecialStyles.ToggleButton.Icon(80, 70, 4, 10)}
-              source={require('../../assets/icons/YellowPixel.png')}
+              source={require('../../../assets/icons/YellowPixel.png')}
             ></Image>
           </Pressable>
         </View>
